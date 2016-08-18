@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Context\CustomerContextMigrationConfiguration.cs" />
+    <Compile Include="Context\CustomerContext.cs" />
     <Compile Include="Entities\Customer.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -29,7 +29,7 @@ namespace Customer.Modal.Mappers
             this.Property(c => c.Email).HasMaxLength(255);
             this.Property(c => c.Email).IsRequired();
 
-            this.HasRequired(e => e.CustomerContact).WithMany().Map(s => s.MapKey("CustomerID")).WillCascadeOnDelete();
+            this.HasRequired(e => e.CustomerContact).WithMany().Map(s => s.MapKey("CustomerID"));
         }
     }
 }
