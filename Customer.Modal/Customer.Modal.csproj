@@ -48,17 +48,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="Entities\Customer.cs" />
-    <Compile Include="Entities\CustomerContacts.cs" />
+    <Compile Include="Entities\Customer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entities\CustomerContacts.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Mappers\CustomerContactMapper.cs" />
+    <Compile Include="Mappers\CustomerMapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Mappers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
